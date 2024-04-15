@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: Segoe UI;
+}
+
+
+h1 {
+    color: black;
+    font-family: "Exo", sans-serif;
+
+}
+
+body {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    background-color: #FFF;
+
+
+}
+
+#linha_topo {
+
+    width: 100%;
+    top: 0;
+}
+
+#topo {
+    background: rgb(250,250,250);
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgb(202, 137, 72) 100%);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#topo #logo img {
+    width: 150px;
+    height: 150px;
+    margin-right: 5%
+}
+
+#topo h1 {
+    font-size: 30px;
+    margin-left: 2%;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#menu {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(77, 73, 73);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c3a3a;
+    min-height: 100vh;
+}
+
+#parte1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 70vh;
+    background-color: rgb(185, 136, 87);
+    border-bottom: 20px solid black; 
+}
+
+.card img {
+    border-radius: 15px;
+    border: solid 2px rgb(185, 136, 87);
+}
+
+#parte2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(185, 136, 87);
+    height: 70vh;
+    border-bottom: 20px solid black;
+}
+
+#parte3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(185, 136, 87);
+    height: 70vh;
+    border-bottom: 20px solid black;
+}
+
+#parte4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: rgb(255,255,255);
+    background: rgb(254,254,254);
+    background-color: rgb(185, 136, 87);
+}
+
+
+.card {
+    margin: 30px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#262525, #141414);
+    transition: all .5s;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.7s cubic-bezier(0, 0, .5, 1);
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.6)
+  }
+  
+  .card:not(:hover) {
+    transform: scale(1.);
+    transition: all 0.7s cubic-bezier(0, 0, .7, 2);
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.6)
+  }
+
+
+
+
+.card:hover {
+    background-image: rgb(255,255,255);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(83,68,51,1) 100%);
+}
+
+
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+card.img {
+    height: 50px;
+    width: 50px;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
